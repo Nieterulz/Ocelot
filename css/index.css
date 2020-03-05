@@ -1,35 +1,43 @@
-body {
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
+header {
     overflow: hidden;
-    padding: 10px 0px 10px 0px;
+    padding: 1% 0px 1% 0px;
     background-color: black;
 }
 
-.header ul {
+header > ul {
     list-style-type: none;
 }
 
-.header a {
+header > ul > li > a {
     float: left;
     color: white;
     padding: 0px 15px;
     text-decoration: none;
     font-size: 20px;
 }
+header a > img {
+    width: 100px;
+    height: 35px;
+    float: left;
+    /* background-color: white; */
+}
+header > ul > li > a:hover {
+    color: red;
+    text-decoration: none;
+}
 
-.header img {
-    height: 30px;
+header > ul > li > a:active {
+    color: red;
+}
+
+.cuadroBlanco {
+    width: 100px;
+    height: 35px;
+    color: white;
     background-color: white;
-}
-
-.header a:hover {
-    background-color: black;
-    color: red;
-}
-
-.header a.active {
-    color: red;
+    float: left;
 }
