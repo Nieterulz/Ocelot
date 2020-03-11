@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        />
+        <link href="css/index.css" rel="stylesheet" type="text/css" />
+        <title>Localización</title>
+    </head>
+    <body>
+        <header>
+            <div class="cuadroBlanco">
+                <a href="index.html">
+                    <img src="images/logos/logo.PNG" alt="Logo Ocelot" />
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="programa.html">Programa</a></li>
+                <li><a href="localizacion.html">Localización</a></li>
+                <li><a href="inscripcion.html">Inscripción</a></li>
+            </ul>
+        </header>
+        <form action="" method="post">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" />
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" />
+
+            <label for="e-mail">E-mail:</label>
+            <input type="text" name="e-mail" id="e-mail" />
+
+            <label for="telefono"> Teléfono:</label>
+            <input type="text" name="telefono" id="telefono" />
+
+            <label for="">Tipo de Inscripción y cuantía:</label>
+            <select name="inscripcion" id="inscripcion">
+                <option value="estandar">Abono estándar</option>
+                <option value="premium">Abono premium</option>
+            </select>
+
+            <label for="fecha-inicio">Fecha inicio: </label>
+            <input type="date" name="fecha-inicio" id="fecha-inicio" />
+
+            <label for="fecha-fin">Fecha fin: </label>
+            <input type="date" name="fecha-fin" id="fecha-fin" />
+            <input type="submit" value="Enviar" />
+
+            <div>
+                <h3>Abono estándar</h3>
+                <p>
+                    El abono estandar incluye exclusivamente la entrada al
+                    evento.
+                </p>
+
+                <p>
+                    Precio final: 33.50 €
+                </p>
+            </div>
+        </form>
+    </body>
+</html>
