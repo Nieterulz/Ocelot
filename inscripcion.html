@@ -8,21 +8,87 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         />
         <link href="css/index.css" rel="stylesheet" type="text/css" />
-        <title>Localización</title>
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <title>Ocelot</title>
     </head>
     <body>
-        <header>
-            <div class="cuadroBlanco">
-                <a href="index.html">
+        <header class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0)"
+                    title="Toggle Navigation Menu"
+                    ><i class="fa fa-bars"></i
+                ></a>
+
+                <a href="index.html" class="logo">
                     <img src="images/logos/logo.PNG" alt="Logo Ocelot" />
                 </a>
+                <a
+                    href="index.html"
+                    class="w3-bar-item w3-padding-large w3-hide-small"
+                    >INICIO
+                </a>
+                <a
+                    href="programa.html"
+                    class="w3-bar-item w3-padding-large w3-hide-small"
+                    >PROGRAMA</a
+                >
+                <a
+                    href="localizacion.html"
+                    class="w3-bar-item w3-padding-large w3-hide-small"
+                    >LOCALIZACIÓN</a
+                >
+                <a
+                    href="inscripcion.html"
+                    class="w3-bar-item w3-padding-large w3-hide-small "
+                    >INSCRIPCIÓN</a
+                >
+                <a
+                    href="javascript:void(0)"
+                    class="w3-padding-large w3-hover-red w3-hide-small w3-right"
+                    ><i class="fa fa-search"></i
+                ></a>
             </div>
-            <ul>
-                <li><a href="index.html">Inicio </a></li>
-                <li><a href="programa.html">Programa</a></li>
-                <li><a href="localizacion.html">Localización</a></li>
-                <li><a href="inscripcion.html">Inscripción</a></li>
-            </ul>
+
+            <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+            <div
+                id="navDemo"
+                class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+                style="margin-top:46px"
+            >
+                <a
+                    href="index.html"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >INICIO</a
+                >
+                <a
+                    href="programa.html"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >PROGRAMA</a
+                >
+                <a
+                    href="localizacion.html"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >LOCALIZACIÓN</a
+                >
+                <a
+                    href="inscripcion.html"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >INSCRIPCIÓN</a
+                >
+            </div>
         </header>
         <form action="" method="post">
             <label for="nombre">Nombre: </label>

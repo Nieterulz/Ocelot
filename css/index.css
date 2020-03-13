@@ -1,45 +1,17 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
+a {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: large;
 }
 
-header {
-    overflow: hidden;
-    /* padding: 1% 0px 1% 0px; */
-    background-color: black;
-}
-
-header > ul {
-    list-style-type: none;
-}
-
-header > ul > li > a {
-    float: left;
-    color: white;
-    padding: 0px 20px;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    /* display: inline-block; */
-}
-header a > img {
-    width: 100px;
-    height: 35px;
-    float: left;
-    /* background-color: white; */
-}
-header > ul > li > a:hover {
+header > div > a:hover {
     color: red;
     text-decoration: none;
 }
 
-header > ul > li > a:active {
-    color: red;
-}
-
-.cuadroBlanco {
-    width: 100px;
-    height: 35px;
-    color: white;
+.logo img {
+    width: 163px;
+    height: auto;
+    float: left;
     background-color: white;
-    float: left;
 }
