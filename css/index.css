@@ -4,7 +4,7 @@
     color: white;
 } */
 
-a {
+header a {
     font-family: "Lato", sans-serif;
     font-weight: bold;
     font-size: large;
@@ -58,9 +58,24 @@ aside > ul > li > a {
 }
 
 .footer {
-    padding: 60px 0;
+    padding: 2% 0;
+    height: 12em;
     background: black;
     text-align: left;
     color: white;
     clear: both;
+}
+
+.programa {
+    padding: 4% 4%;
+}
+
+.imagenes {
+    display: block;
+    margin: auto;
+}
+
+.centrarTexto {
+    text-align: center;
+    font-weight: bold;
 }

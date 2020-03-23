@@ -7,6 +7,10 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
         <link href="css/index.css" rel="stylesheet" type="text/css" />
         <link
             rel="stylesheet"
@@ -23,7 +27,7 @@
         <title>Ocelot</title>
     </head>
     <body>
-        <header class="w3-top">
+        <header>
             <div class="w3-bar w3-black w3-card">
                 <a
                     class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
@@ -57,8 +61,8 @@
                 >
                 <a
                     href="javascript:void(0)"
-                    class="w3-padding-large w3-hover-red w3-hide-small w3-right"
-                    ><i class="fa fa-search"></i
+                    class="w3-padding-large w3-hover-red w3-hide-small w3-right w3-white"
+                    ><i class="fa fa-user"></i
                 ></a>
             </div>
 
@@ -91,35 +95,101 @@
             </div>
         </header>
 
-        <div>
-            <ul>
-                <li>
-                    <img src="images/people/ocelote.png" alt="Ocelote" />
-                    <h5>Carlos Rodríguez 'Ocelote'</h5>
-                    <p>
-                        Carlos "ocelote" Rodríguez Santiago es un jugador
-                        retirado conocido por jugar en SK Gaming. Es el fundador
-                        de Gamers2, ahora llamado G2 Esports.
-                    </p>
-                </li>
-                <li>
-                    <img src="images/people/ibai.png" alt="Ibai Llanos" />
-                    <h5>Ibai Llanos</h5>
-                    <p>
-                        Ibai "Ibai" Llanos es un Shoutcaster de League of
-                        Legends español. Ahora trabaja en G2 Esports
-                    </p>
-                </li>
-                <li>
-                    <img src="images/people/faker.png" alt="Faker" />
-                    <h5>Lee Sang-Hyeok ‘Faker’</h5>
-                    <p>
-                        Lee "Faker" Sang-hyeok (Hangul: 이상혁) es un jugador de
-                        esports de League of Legends, actualmente jugador y
-                        copropietario en T1.
-                    </p>
-                </li>
-            </ul>
+        <div class="row programa">
+            <div class="col-4">
+                <img
+                    src="images/people/ocelote.png"
+                    alt="Ocelote"
+                    class="imagenes"
+                />
+                <h5 class="centrarTexto">Carlos Rodríguez 'Ocelote'</h5>
+                <p style="text-align: center;">
+                    Carlos "Ocelote" Rodríguez Santiago es un jugador retirado
+                    conocido por jugar en SK Gaming. Es el fundador de Gamers2,
+                    ahora llamado G2 Esports.
+                </p>
+            </div>
+            <div class="col-4">
+                <img
+                    src="images/people/ibai.png"
+                    alt="Ibai Llanos"
+                    class="imagenes"
+                />
+                <h5 class="centrarTexto">Ibai Llanos</h5>
+                <p>
+                    Ibai "Ibai" Llanos es un Shoutcaster de League of Legends
+                    español. Ahora trabaja en G2 Esports
+                </p>
+            </div>
+            <div class="col-4">
+                <img
+                    src="images/people/faker.png"
+                    alt="Faker"
+                    class="imagenes"
+                />
+                <h5 class="centrarTexto">Lee Sang-Hyeok ‘Faker’</h5>
+                <p>
+                    Lee "Faker" Sang-hyeok (Hangul: 이상혁) es un jugador de
+                    esports de League of Legends, actualmente jugador y
+                    copropietario en T1.
+                </p>
+            </div>
         </div>
+
+        <footer class="footer">
+            <ul>
+                <div class="col-sm-4">
+                    <li>
+                        <a href="index.html" class="logo">
+                            <img
+                                src="images/logos/logo.PNG"
+                                alt="Logo Ocelot"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/logos/twitter.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/logos/facebook.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/logos/instagram.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/logos/youtube.png" alt="" />
+                        </a>
+                    </li>
+                </div>
+
+                <div class="col-sm-4">
+                    <li>
+                        <h2>Contacto</h2>
+                    </li>
+                    <li>Compañía: PNET©</li>
+                    <li>
+                        Emails: luis.decelismunoz@alum.uca.es<br />
+                        antonio.sanchmunoz@alum.uca.com
+                    </li>
+                </div>
+
+                <div class="col-sm-4">
+                    <li>
+                        <h2>Navegación</h2>
+                    </li>
+                    <li>Inicio</li>
+                    <li>Localización</li>
+                    <li>Programa</li>
+                    <li>Inscripción</li>
+                </div>
+            </ul>
+        </footer>
     </body>
 </html>
