@@ -1,4 +1,10 @@
-a {
+/* .fondo {
+    background-image: url("../images/fondo.png");
+    background-repeat: round;
+    color: white;
+} */
+
+header a {
     font-family: "Lato", sans-serif;
     font-weight: bold;
     font-size: large;
@@ -8,10 +14,68 @@ header > div > a:hover {
     color: red;
     text-decoration: none;
 }
+aside > ul > li > a {
+    color: white;
+}
 
 .logo img {
     width: 163px;
     height: auto;
     float: left;
     background-color: white;
+}
+
+.news {
+    list-style-type: none;
+}
+
+.noticias {
+    float: right;
+    width: 26%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: "Lato";
+    text-decoration: none;
+}
+
+.noticia {
+    padding-left: 9%;
+    padding-top: 3%;
+    padding-bottom: 7%;
+}
+.noticiaText {
+    text-decoration: none;
+    padding-left: 12%;
+}
+
+.noticiaText:hover {
+    color: red;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.footer {
+    padding: 2% 0;
+    height: 12em;
+    background: black;
+    text-align: left;
+    color: white;
+    clear: both;
+}
+
+.programa {
+    padding: 4% 4%;
+}
+
+.imagenes {
+    display: block;
+    margin: auto;
+}
+
+.centrarTexto {
+    text-align: center;
+    font-weight: bold;
 }

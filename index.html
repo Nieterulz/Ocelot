@@ -7,6 +7,10 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
         <link href="css/index.css" rel="stylesheet" type="text/css" />
         <link
             rel="stylesheet"
@@ -23,7 +27,7 @@
         <title>Ocelot</title>
     </head>
     <body>
-        <header class="w3-top">
+        <header>
             <div class="w3-bar w3-black w3-card">
                 <a
                     class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
@@ -57,8 +61,8 @@
                 >
                 <a
                     href="javascript:void(0)"
-                    class="w3-padding-large w3-hover-red w3-hide-small w3-right"
-                    ><i class="fa fa-search"></i
+                    class="w3-padding-large w3-hover-red w3-hide-small w3-right w3-white"
+                    ><i class="fa fa-user"></i
                 ></a>
             </div>
 
@@ -91,75 +95,87 @@
             </div>
         </header>
 
-        <img src="images/fondo.png" alt="" />
+        <img src="images/fondo.png" alt="" style="width: 100%;" />
 
-        <aside>
-            <h2>Noticias</h2>
-            <ul>
-                <li>
+        <aside class="noticias">
+            <h2 style="margin-left: 40px;  margin-bottom: 30px; color: red;">
+                Noticias
+            </h2>
+            <ul class="news">
+                <li class="noticia">
                     <a href="index.html">
                         <img src="images/news/csGo.png" alt="" />
+                        <h4 style="padding-left: 5%;">CSGO: Katowice 2019</h4>
                     </a>
-                    CSGO: Katowice 2019
                 </li>
-                <li>
+                <li class="noticia">
                     <a href="index.html">
                         <img src="images/news/lolWords.png" alt="" />
+                        <h4 class="noticiaText">LoL: Worlds 2019</h4>
                     </a>
-                    LoL: Worlds 2019
                 </li>
 
-                <li>
+                <li class="noticia">
                     <a href="index.html">
                         <img src="images/news/lolAllStars.png" alt="" />
+                        <h4 class="noticiaText">LoL: All Star 2019</h4>
                     </a>
-                    LoL: All Star 2019
                 </li>
             </ul>
         </aside>
-
-        <footer>
+        <footer class="footer">
             <ul>
-                <li>
-                    <a href="index.html" class="logo">
-                        <img src="images/logos/logo.PNG" alt="Logo Ocelot" />
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <img src="images/logos/twitter.png" alt="" />
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <img src="images/logos/facebook.png" alt="" />
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <img src="images/logos/instagram.png" alt="" />
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <img src="images/logos/youtube.png" alt="" />
-                    </a>
-                </li>
-                <li>
-                    <h2>Contacto</h2>
-                </li>
-                <li>Compañía: PNET©</li>
-                <li>
-                    Emails: luis.decelismunoz@alum.uca.es<br />
-                    antonio.sanchmunoz@alum.uca.com
-                </li>
-                <li>
-                    <h2>Navegación</h2>
-                </li>
-                <li>Inicio</li>
-                <li>Localización</li>
-                <li>Programa</li>
-                <li>Inscripción</li>
+                <div class="col-sm-4">
+                    <li>
+                        <a href="index.html" class="logo">
+                            <img
+                                src="images/logos/logo.PNG"
+                                alt="Logo Ocelot"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/logos/twitter.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/logos/facebook.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/logos/instagram.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/logos/youtube.png" alt="" />
+                        </a>
+                    </li>
+                </div>
+
+                <div class="col-sm-4">
+                    <li>
+                        <h2>Contacto</h2>
+                    </li>
+                    <li>Compañía: PNET©</li>
+                    <li>
+                        Emails: luis.decelismunoz@alum.uca.es<br />
+                        antonio.sanchmunoz@alum.uca.com
+                    </li>
+                </div>
+
+                <div class="col-sm-4">
+                    <li>
+                        <h2>Navegación</h2>
+                    </li>
+                    <li>Inicio</li>
+                    <li>Localización</li>
+                    <li>Programa</li>
+                    <li>Inscripción</li>
+                </div>
             </ul>
         </footer>
     </body>
