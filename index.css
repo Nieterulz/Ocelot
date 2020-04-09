@@ -1,5 +1,14 @@
+body {
+    background-image: url(images/fondo.png);
+}
+
 #separarInicio {
     padding: 0.5rem;
+}
+
+#marginNoticias {
+    margin: 0px 0px 0.7rem 0px;
+    text-decoration: none;
 }
 
 .navbar-item img {
@@ -8,4 +17,16 @@
 
 #logo:hover {
     background-color: white;
+}
+
+.is-red {
+    color: red;
+}
+
+.has-background-transparent {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.paddingless-top {
+    padding-top: 0px;
 }
