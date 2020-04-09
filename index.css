@@ -1,0 +1,11 @@
+#separarInicio {
+    padding: 0.5rem;
+}
+
+.navbar-item img {
+    max-height: 3rem;
+}
+
+#logo:hover {
+    background-color: white;
+}
