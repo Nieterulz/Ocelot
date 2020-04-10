@@ -4,18 +4,16 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ocelot</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
-        />
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="css/mybulma.css" />
+        <link rel="stylesheet" href="css/mystyles.css" />
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
         <script
             defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
         ></script>
         <!-- <script src="/js/scripts.js"></script> -->
     </head>
-    <body>
+    <body class="body">
         <nav
             class="navbar is-black"
             role="navigation"
@@ -51,31 +49,33 @@
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
                     <a
+                        id="redHover"
                         style="padding-left: 1.5rem;"
-                        class="navbar-item has-text-white has-text-weight-bold"
+                        class="navbar-item has-text-weight-bold has-text-danger"
                         href="index.html"
                     >
                         INICIO
                     </a>
 
-                    <hr class="navbar-divider" />
-
                     <a
-                        class="navbar-item has-text-white has-text-weight-bold"
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold"
                         href="programa.html"
                     >
                         PROGRAMA
                     </a>
 
                     <a
-                        class="navbar-item has-text-white has-text-weight-bold"
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold"
                         href="localizacion.html"
                     >
                         LOCALIZACIÓN
                     </a>
 
                     <a
-                        class="navbar-item has-text-white has-text-weight-bold"
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold"
                         href="inscripcion.html"
                     >
                         INSCRIPCIÓN
@@ -96,14 +96,11 @@
             </div>
         </nav>
 
-        <!-- Imagen de fondo -->
-        <!-- <div class="hero is-fullheight"> -->
-        <!-- <img src="images/fondo.png" alt="Imagen de League of Legends" /> -->
         <!-- Noticias -->
         <aside
             class="column is-3 is-offset-9 hero-body has-text-centered has-background-transparent paddingless-top"
         >
-            <h2 id="marginNoticias" class="is-red is-size-4">
+            <h2 id="marginNoticias" class="has-text-danger is-size-4">
                 Noticias
             </h2>
             <ul>
@@ -143,60 +140,108 @@
         </aside>
         <!-- </div> -->
 
-        <footer class="footer">
-            <ul>
-                <div class="col-sm-4">
-                    <li>
-                        <a href="index.html" class="logo">
+        <footer
+            class="footer has-background-black"
+            style="padding: 40px 24px 20px 24px;"
+        >
+            <div class="columns has-text-centered has-text-white">
+                <div class="column">
+                    <div class="columns">
+                        <div class="column">
                             <img
-                                src="images/logos/logo.PNG"
+                                src="images/logos/logoWhite.PNG"
                                 alt="Logo Ocelot"
+                                width="150"
+                                height="30"
                             />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img src="images/logos/twitter.png" alt="" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img src="images/logos/facebook.png" alt="" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img src="images/logos/instagram.png" alt="" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img src="images/logos/youtube.png" alt="" />
-                        </a>
-                    </li>
+                        </div>
+                        <div class="column"></div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="column">
+                        <div class="columns has-text-centered">
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-twitter"
+                                ></ion-icon>
+                            </div>
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-instagram"
+                                ></ion-icon>
+                            </div>
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-facebook"
+                                ></ion-icon>
+                            </div>
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-youtube"
+                                ></ion-icon>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="column is-paddingless">
+                    <p class="is-size-2">Contacto</p>
+                    <br />
 
-                <div class="col-sm-4">
-                    <li>
-                        <h2>Contacto</h2>
-                    </li>
-                    <li>Compañía: PNET©</li>
-                    <li>
-                        Emails: luis.decelismunoz@alum.uca.es<br />
-                        antonio.sanchmunoz@alum.uca.com
-                    </li>
+                    <p
+                        class="is-size-5"
+                        style="padding-left: 20px; padding-top: 10px;"
+                    >
+                        <b class="has-text-danger">Compañía:</b> Prácticas de
+                        PNET
+                    </p>
+                    <br />
+                    <p class="is-size-5" style="padding-left: 3px;">
+                        <b class="has-text-danger">E-mail:</b> info@pnet.com
+                    </p>
                 </div>
-
-                <div class="col-sm-4">
-                    <li>
-                        <h2>Navegación</h2>
-                    </li>
-                    <li>Inicio</li>
-                    <li>Localización</li>
-                    <li>Programa</li>
-                    <li>Inscripción</li>
+                <div class="column is-paddingless">
+                    <p class="is-size-2">Navegación</p>
+                    <!-- <br /> -->
+                    <div class="columns" style="padding-top: 10px;">
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="index.html"
+                                >Inicio</a
+                            >
+                        </div>
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="localizacion.html"
+                                >Localización</a
+                            >
+                        </div>
+                    </div>
+                    <br />
+                    <div class="columns">
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="programa.html"
+                                >Programa</a
+                            >
+                        </div>
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href=""
+                                >Inscripción</a
+                            >
+                        </div>
+                    </div>
                 </div>
-            </ul>
+            </div>
         </footer>
     </body>
 </html>

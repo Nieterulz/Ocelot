@@ -1,0 +1,25 @@
+{
+    "name": "ocelot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "sass/mystyles.scss",
+    "scripts": {
+        "css-build": "node-sass --omit-source-map-url sass/mybulma.scss css/mybulma.css",
+        "css-watch": "npm run css-build -- --watch",
+        "start": "npm run css-watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nieterulz/Ocelot.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Nieterulz/Ocelot/issues"
+    },
+    "homepage": "https://github.com/Nieterulz/Ocelot#readme",
+    "devDependencies": {
+        "bulma": "^0.8.1",
+        "node-sass": "^4.13.1"
+    }
+}

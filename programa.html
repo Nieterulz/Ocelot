@@ -4,16 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ocelot</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
-        />
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="css/mybulma.css" />
+        <link rel="stylesheet" href="css/mystyles.css" />
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
         <script
             defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
         ></script>
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
         <!-- <script src="/js/scripts.js"></script> -->
     </head>
     <body>
@@ -52,29 +49,33 @@
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
                     <a
+                        id="redHover"
                         style="padding-left: 1.5rem;"
-                        class="navbar-item has-text-white has-text-weight-bold"
+                        class="navbar-item has-text-weight-bold"
                         href="index.html"
                     >
                         INICIO
                     </a>
 
                     <a
-                        class="navbar-item has-text-white has-text-weight-bold"
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold has-text-danger"
                         href="programa.html"
                     >
                         PROGRAMA
                     </a>
 
                     <a
-                        class="navbar-item has-text-white has-text-weight-bold"
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold"
                         href="localizacion.html"
                     >
                         LOCALIZACIÓN
                     </a>
 
                     <a
-                        class="navbar-item has-text-white has-text-weight-bold"
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold"
                         href="inscripcion.html"
                     >
                         INSCRIPCIÓN
@@ -84,8 +85,10 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <span class="icon">
-                                <i class="fas fa-user" aria-hidden="true"></i>
+                            <span class="icon is-medium">
+                                <span class="fa-stack">
+                                    <i class="fas fa-user fa-stack-1x"></i>
+                                </span>
                             </span>
                         </div>
                     </div>
@@ -148,7 +151,7 @@
                     <div class="columns">
                         <div class="column">
                             <img
-                                src="images/logos/logoWhite.png"
+                                src="images/logos/logoWhite.PNG"
                                 alt="Logo Ocelot"
                                 width="150"
                                 height="30"
@@ -156,7 +159,6 @@
                         </div>
                         <div class="column"></div>
                     </div>
-                    <br />
                     <br />
                     <br />
                     <div class="column">
@@ -191,7 +193,6 @@
                 <div class="column is-paddingless">
                     <p class="is-size-2">Contacto</p>
                     <br />
-                    <br />
 
                     <p
                         class="is-size-5"
@@ -207,8 +208,7 @@
                 </div>
                 <div class="column is-paddingless">
                     <p class="is-size-2">Navegación</p>
-                    <br />
-
+                    <!-- <br /> -->
                     <div class="columns" style="padding-top: 10px;">
                         <div class="column">
                             <a
