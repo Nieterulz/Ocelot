@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ocelot</title>
+        <link rel="stylesheet" href="css/mybulma.css" />
+        <link rel="stylesheet" href="css/mystyles.css" />
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+        ></script>
+        <!-- <script src="/js/scripts.js"></script> -->
+    </head>
+    <body class="">
+        <nav
+            class="navbar is-black"
+            role="navigation"
+            aria-label="main navigation"
+        >
+            <div class="navbar-brand has-background-white">
+                <a
+                    id="logo"
+                    class="navbar-item"
+                    href="index.html"
+                    style="padding: 0 10px 0 10px;"
+                >
+                    <img
+                        src="images/logos/logo.PNG"
+                        alt="Logo Ocelot"
+                        width="112"
+                        height="28"
+                    />
+                </a>
+                <a
+                    role="button"
+                    class="navbar-burger burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarBasicExample"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a
+                        id="redHover"
+                        style="padding-left: 1.5rem;"
+                        class="navbar-item has-text-weight-bold"
+                        href="index.html"
+                    >
+                        INICIO
+                    </a>
+
+                    <a
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold"
+                        href="programa.html"
+                    >
+                        PROGRAMA
+                    </a>
+
+                    <a
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold"
+                        href="localizacion.html"
+                    >
+                        LOCALIZACIÓN
+                    </a>
+
+                    <a
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold has-text-danger"
+                        href="inscripcion.html"
+                    >
+                        INSCRIPCIÓN
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <span class="icon is-medium">
+                                <span class="fa-stack">
+                                    <i class="fas fa-user fa-stack-1x"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Formulario -->
+        <form action="" class="column is-3 is-offset-1">
+            <!-- Nombre -->
+            <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                    <input class="input" type="text" />
+                </div>
+            </div>
+
+            <!-- Apellidos -->
+            <div class="field">
+                <label class="label">Apellidos</label>
+                <div class="control">
+                    <input class="input" type="text" value="" />
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" />
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </div>
+                <span></span>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="field">
+                <label class="label">Teléfono</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="tel" value="" />
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Tipo de inscripción -->
+            <div class="field">
+                <label class="label">Tipo de inscripción</label>
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Abono estándar</option>
+                            <option>Abono medio</option>
+                            <option>Abono VIP</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fecha de inicio -->
+            <div class="field">
+                <label class="label">Fecha de inicio</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="date" />
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-calendar"></i>
+                    </span>
+                </div>
+                <span></span>
+            </div>
+
+            <!-- Fecha de fin -->
+            <div class="field">
+                <label class="label">Fecha de fin</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="date" />
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-calendar"></i>
+                    </span>
+                </div>
+                <span></span>
+            </div>
+
+            <!-- Aceptar términos y condiciones -->
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                        Acepto los <a href="#">términos y condiciones</a>
+                    </label>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Comprar</button>
+                </div>
+            </div>
+        </form>
+
+        <footer
+            class="footer has-background-black"
+            style="padding: 40px 24px 20px 24px;"
+        >
+            <div class="columns has-text-centered has-text-white">
+                <div class="column">
+                    <div class="columns">
+                        <div class="column">
+                            <img
+                                src="images/logos/logoWhite.PNG"
+                                alt="Logo Ocelot"
+                                width="150"
+                                height="30"
+                            />
+                        </div>
+                        <div class="column"></div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="column">
+                        <div class="columns has-text-centered">
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-twitter"
+                                ></ion-icon>
+                            </div>
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-instagram"
+                                ></ion-icon>
+                            </div>
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-facebook"
+                                ></ion-icon>
+                            </div>
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-youtube"
+                                ></ion-icon>
+                            </div>
+                        </div>
+                        <p>
+                            &copy; 2020 Ocelot, Inc. Todos los derechos
+                            reservados.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-paddingless">
+                    <p class="is-size-2">Contacto</p>
+                    <br />
+
+                    <p
+                        class="is-size-5"
+                        style="padding-left: 20px; padding-top: 10px;"
+                    >
+                        <b class="has-text-danger">Compañía:</b> Prácticas de
+                        PNET
+                    </p>
+                    <br />
+                    <p class="is-size-5" style="padding-left: 3px;">
+                        <b class="has-text-danger">E-mail:</b>
+                        <a class="has-text-white" href="mailto:info@pnet.com"
+                            >info@pnet.com</a
+                        >
+                    </p>
+                </div>
+                <div class="column is-paddingless">
+                    <p class="is-size-2">Navegación</p>
+                    <!-- <br /> -->
+                    <div class="columns" style="padding-top: 10px;">
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="index.html"
+                                >Inicio</a
+                            >
+                        </div>
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="localizacion.html"
+                                >Localización</a
+                            >
+                        </div>
+                    </div>
+                    <br />
+                    <div class="columns">
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="programa.html"
+                                >Programa</a
+                            >
+                        </div>
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="inscripcion.html"
+                                >Inscripción</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
