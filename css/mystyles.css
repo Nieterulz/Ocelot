@@ -19,7 +19,10 @@
     background-color: white;
 }
 
-#redHover:hover {
+#redHoverInicio:hover,
+#redHoverPrograma:hover,
+#redHoverLocalizacion:hover,
+#redHoverInscripcion:hover {
     color: red;
 }
 
@@ -29,4 +32,23 @@
 
 .paddingless-top {
     padding-top: 0px;
+}
+
+@media (max-width: 768px) {
+    .has-padding-form {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    .is-oculto {
+        display: none;
+    }
+    .centrar-texto {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .not-oculto {
+        display: none;
+    }
 }

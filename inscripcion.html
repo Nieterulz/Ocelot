@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,16 +11,14 @@
             defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
         ></script>
-        <!-- <script src="/js/scripts.js"></script> -->
+        <script src="node_modules/better-dom/dist/better-dom.js"></script>
+        <script src="node_modules/better-dateinput-polyfill/dist/better-dateinput-polyfill.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
     </head>
     <body>
         <header>
-            <nav
-                class="navbar is-black"
-                role="navigation"
-                aria-label="main navigation"
-            >
-                <div class="navbar-brand has-background-white">
+            <nav class="navbar is-black" aria-label="main navigation">
+                <div class="navbar-brand">
                     <a id="logo" class="navbar-item" href="index.html">
                         <img
                             src="images/logos/logo.PNG"
@@ -30,31 +28,24 @@
                         />
                     </a>
                     <a
+                        id="navBurger"
                         role="button"
-                        class="navbar-burger burger"
+                        class="navbar-burger"
                         aria-label="menu"
                         aria-expanded="false"
-                        data-target="navbarBasicExample"
+                        data-target="navMenu"
+                        onclick="desplegarMenu();"
                     >
-                        <span
-                            aria-hidden="true"
-                            class="is-black has-background-black"
-                        ></span>
-                        <span
-                            aria-hidden="true"
-                            class="is-black has-background-black"
-                        ></span>
-                        <span
-                            aria-hidden="true"
-                            class="is-black has-background-black"
-                        ></span>
+                        <span aria-hidden="true" class="is-black"></span>
+                        <span aria-hidden="true" class="is-black"></span>
+                        <span aria-hidden="true" class="is-black"></span>
                     </a>
                 </div>
 
-                <div id="navbarBasicExample" class="navbar-menu">
+                <div id="navMenu" class="navbar-menu">
                     <div class="navbar-start">
                         <a
-                            id="redHover"
+                            id="redHoverInicio"
                             class="navbar-item has-text-weight-bold separarInicio"
                             href="index.html"
                         >
@@ -62,7 +53,7 @@
                         </a>
 
                         <a
-                            id="redHover"
+                            id="redHoverPrograma"
                             class="navbar-item has-text-weight-bold"
                             href="programa.html"
                         >
@@ -70,7 +61,7 @@
                         </a>
 
                         <a
-                            id="redHover"
+                            id="redHoverLocalizacion"
                             class="navbar-item has-text-weight-bold"
                             href="localizacion.html"
                         >
@@ -78,7 +69,7 @@
                         </a>
 
                         <a
-                            id="redHover"
+                            id="redHoverInscripcion"
                             class="navbar-item has-text-weight-bold has-text-danger"
                             href="inscripcion.html"
                         >
@@ -107,7 +98,7 @@
         <br /><br />
         <div class="columns">
             <!-- Formulario -->
-            <form action="" class="column is-3 is-offset-1">
+            <form action="#" class="column is-3 is-offset-1 has-padding-form">
                 <!-- Nombre -->
                 <div class="field">
                     <label class="label">Nombre</label>
@@ -165,7 +156,7 @@
                 <div class="field">
                     <label class="label">Fecha de inicio</label>
                     <div class="control has-icons-left">
-                        <input class="input" type="date" />
+                        <input class="input" type="date" data-polyfill="all" />
                         <span class="icon is-small is-left">
                             <i class="fas fa-calendar"></i>
                         </span>
@@ -177,12 +168,11 @@
                 <div class="field">
                     <label class="label">Fecha de fin</label>
                     <div class="control has-icons-left">
-                        <input class="input" type="date" />
+                        <input class="input" type="date" data-polyfill="all" />
                         <span class="icon is-small is-left">
                             <i class="fas fa-calendar"></i>
                         </span>
                     </div>
-                    <span></span>
                 </div>
 
                 <!-- Aceptar términos y condiciones -->
@@ -190,14 +180,19 @@
                     <div class="control">
                         <label class="checkbox">
                             <input type="checkbox" />
-                            Acepto los <a class="has-text-danger href="#">términos y condiciones</a>
+                            Acepto los
+                            <a class="has-text-danger" href="#"
+                                >términos y condiciones</a
+                            >
                         </label>
                     </div>
                 </div>
 
-                <div class="field is-grouped">
+                <div class="field">
                     <div class="control">
-                        <button class="button is-black has-text-weight-bold">
+                        <button
+                            class="button is-black has-text-weight-bold is-oculto"
+                        >
                             Comprar
                         </button>
                     </div>
@@ -205,15 +200,29 @@
             </form>
 
             <!-- Información sobre el tipo de inscripción -->
+
             <div class="column is-4 is-offset-3 box">
                 <h1 class="has-text-centered has-text-weight-bold is-size-3">
                     Abono estándar
                 </h1>
 
-                <p>
+                <p class="centrar-texto">
                     El abono estándar incluye exclusivamente la entrada al
                     evento.
                 </p>
+            </div>
+
+            <br />
+            <div class="field">
+                <div class="control is-centered">
+                    <center>
+                        <button
+                            class="button is-black has-text-weight-bold not-oculto"
+                        >
+                            Comprar
+                        </button>
+                    </center>
+                </div>
             </div>
         </div>
 

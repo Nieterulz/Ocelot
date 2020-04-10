@@ -22,5 +22,8 @@
         "bulma": "^0.8.1",
         "node-sass": "^4.13.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "better-dateinput-polyfill": "^3.3.0",
+        "better-dom": "^4.1.0"
+    }
 }
