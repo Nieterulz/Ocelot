@@ -2,8 +2,8 @@
     background-image: url(../images/fondo.png);
 }
 
-#separarInicio {
-    padding: 0.5rem;
+.separarInicio {
+    padding-left: 1.5rem;
 }
 
 #marginNoticias {
@@ -15,7 +15,7 @@
     max-height: 3rem;
 }
 
-#logo:hover {
+#logo {
     background-color: white;
 }
 
