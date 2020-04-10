@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Ocelot</title>
+        <title>Localización</title>
         <link rel="stylesheet" href="css/mybulma.css" />
         <link rel="stylesheet" href="css/mystyles.css" />
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
@@ -13,82 +13,96 @@
         ></script>
     </head>
     <body>
-        <nav
-            class="navbar is-black"
-            role="navigation"
-            aria-label="main navigation"
-        >
-            <div class="navbar-brand has-background-white">
-                <a id="logo" class="navbar-item" href="index.html">
-                    <img
-                        src="images/logos/logo.PNG"
-                        alt="Logo Ocelot"
-                        width="112"
-                        height="28"
-                    />
-                </a>
-                <a
-                    role="button"
-                    class="navbar-burger burger"
-                    aria-label="menu"
-                    aria-expanded="false"
-                    data-target="navbarBasicExample"
-                >
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a
-                        id="redHover"
-                        style="padding-left: 1.5rem;"
-                        class="navbar-item has-text-weight-bold"
-                        href="index.html"
-                    >
-                        INICIO
+        <header>
+            <nav
+                class="navbar is-black"
+                role="navigation"
+                aria-label="main navigation"
+            >
+                <div class="navbar-brand has-background-white">
+                    <a id="logo" class="navbar-item" href="index.html">
+                        <img
+                            src="images/logos/logo.PNG"
+                            alt="Logo Ocelot"
+                            width="112"
+                            height="28"
+                        />
                     </a>
-
                     <a
-                        id="redHover"
-                        class="navbar-item has-text-weight-bold"
-                        href="programa.html"
+                        role="button"
+                        class="navbar-burger burger"
+                        aria-label="menu"
+                        aria-expanded="false"
+                        data-target="navbarBasicExample"
                     >
-                        PROGRAMA
-                    </a>
-
-                    <a
-                        id="redHover"
-                        class="navbar-item has-text-weight-bold has-text-danger"
-                        href="localizacion.html"
-                    >
-                        LOCALIZACIÓN
-                    </a>
-
-                    <a
-                        id="redHover"
-                        class="navbar-item has-text-weight-bold"
-                        href="inscripcion.html"
-                    >
-                        INSCRIPCIÓN
+                        <span
+                            aria-hidden="true"
+                            class="is-black has-background-black"
+                        ></span>
+                        <span
+                            aria-hidden="true"
+                            class="is-black has-background-black"
+                        ></span>
+                        <span
+                            aria-hidden="true"
+                            class="is-black has-background-black"
+                        ></span>
                     </a>
                 </div>
 
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <span class="icon is-medium">
-                                <span class="fa-stack">
-                                    <i class="fas fa-user fa-stack-1x"></i>
-                                </span>
-                            </span>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a
+                            id="redHover"
+                            class="navbar-item has-text-weight-bold separarInicio"
+                            href="index.html"
+                        >
+                            INICIO
+                        </a>
+
+                        <a
+                            id="redHover"
+                            class="navbar-item has-text-weight-bold"
+                            href="programa.html"
+                        >
+                            PROGRAMA
+                        </a>
+
+                        <a
+                            id="redHover"
+                            class="navbar-item has-text-weight-bold has-text-danger"
+                            href="localizacion.html"
+                        >
+                            LOCALIZACIÓN
+                        </a>
+
+                        <a
+                            id="redHover"
+                            class="navbar-item has-text-weight-bold"
+                            href="inscripcion.html"
+                        >
+                            INSCRIPCIÓN
+                        </a>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a href="">
+                                    <span class="icon is-medium has-text-white">
+                                        <span class="fa-stack">
+                                            <i
+                                                class="fas fa-user fa-stack-1x"
+                                            ></i>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <!--  -->
         <br /><br />
         <!--  -->
@@ -172,35 +186,42 @@
                     <div class="column">
                         <div class="columns has-text-centered">
                             <div class="column">
-                                <ion-icon
-                                    class="icon is-medium has-text-danger"
-                                    name="logo-twitter"
-                                ></ion-icon>
+                                <a href="https://twitter.com/">
+                                    <ion-icon
+                                        class="icon is-medium has-text-danger"
+                                        name="logo-twitter"
+                                    ></ion-icon>
+                                </a>
                             </div>
                             <div class="column">
-                                <ion-icon
-                                    class="icon is-medium has-text-danger"
-                                    name="logo-instagram"
-                                ></ion-icon>
+                                <a href="https://instagram.com/">
+                                    <ion-icon
+                                        class="icon is-medium has-text-danger"
+                                        name="logo-instagram"
+                                    ></ion-icon>
+                                </a>
                             </div>
                             <div class="column">
-                                <ion-icon
-                                    class="icon is-medium has-text-danger"
-                                    name="logo-facebook"
-                                ></ion-icon>
+                                <a href="https://facebook.com/">
+                                    <ion-icon
+                                        class="icon is-medium has-text-danger"
+                                        name="logo-facebook"
+                                    ></ion-icon>
+                                </a>
                             </div>
                             <div class="column">
-                                <ion-icon
-                                    class="icon is-medium has-text-danger"
-                                    name="logo-youtube"
-                                ></ion-icon>
+                                <a href="https://youtube.com/">
+                                    <ion-icon
+                                        class="icon is-medium has-text-danger"
+                                        name="logo-youtube"
+                                    ></ion-icon>
+                                </a>
                             </div>
                         </div>
-                        <p>
-                            &copy; 2020 Ocelot, Inc. Todos los derechos
-                            reservados.
-                        </p>
                     </div>
+                    <p>
+                        &copy; 2020 Ocelot, Inc. Todos los derechos reservados.
+                    </p>
                 </div>
                 <div class="column is-paddingless">
                     <p class="is-size-2">Contacto</p>
@@ -215,7 +236,9 @@
                     </p>
                     <br />
                     <p class="is-size-5" style="padding-left: 3px;">
-                        <b class="has-text-danger">E-mail:</b>
+                        <b class="has-text-danger">
+                            E-mail:
+                        </b>
                         <a class="has-text-white" href="mailto:info@pnet.com"
                             >info@pnet.com</a
                         >
