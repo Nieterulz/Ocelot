@@ -1,134 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        />
-        <link href="css/index.css" rel="stylesheet" type="text/css" />
-        <link
-            rel="stylesheet"
-            href="https://www.w3schools.com/w3css/4/w3.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Lato"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ocelot</title>
+        <link rel="stylesheet" href="css/mybulma.css" />
+        <link rel="stylesheet" href="css/mystyles.css" />
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+        ></script>
+        <!-- <script src="/js/scripts.js"></script> -->
     </head>
     <body>
-        <header>
-            <div class="w3-bar w3-black w3-card">
+        <nav
+            class="navbar is-black"
+            role="navigation"
+            aria-label="main navigation"
+        >
+            <div class="navbar-brand has-background-white">
                 <a
-                    class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-                    href="javascript:void(0)"
-                    title="Toggle Navigation Menu"
-                    ><i class="fa fa-bars"></i
-                ></a>
-
-                <a href="index.html" class="logo">
-                    <img src="images/logos/logo.PNG" alt="Logo Ocelot" />
+                    id="logo"
+                    class="navbar-item"
+                    href="index.html"
+                    style="padding: 0 10px 0 10px;"
+                >
+                    <img
+                        src="images/logos/logo.PNG"
+                        alt="Logo Ocelot"
+                        width="112"
+                        height="28"
+                    />
                 </a>
                 <a
-                    href="index.html"
-                    class="w3-bar-item w3-padding-large w3-hide-small"
-                    >INICIO
+                    role="button"
+                    class="navbar-burger burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarBasicExample"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
-                <a
-                    href="programa.html"
-                    class="w3-bar-item w3-padding-large w3-hide-small"
-                    >PROGRAMA</a
-                >
-                <a
-                    href="localizacion.html"
-                    class="w3-bar-item w3-padding-large w3-hide-small"
-                    >LOCALIZACIÓN</a
-                >
-                <a
-                    href="inscripcion.html"
-                    class="w3-bar-item w3-padding-large w3-hide-small "
-                    >INSCRIPCIÓN</a
-                >
-                <a
-                    href="javascript:void(0)"
-                    class="w3-padding-large w3-hover-red w3-hide-small w3-right w3-white"
-                    ><i class="fa fa-user"></i
-                ></a>
             </div>
 
-            <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-            <div
-                id="navDemo"
-                class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
-                style="margin-top:46px"
-            >
-                <a
-                    href="index.html"
-                    class="w3-bar-item w3-button w3-padding-large"
-                    >INICIO</a
-                >
-                <a
-                    href="programa.html"
-                    class="w3-bar-item w3-button w3-padding-large"
-                    >PROGRAMA</a
-                >
-                <a
-                    href="localizacion.html"
-                    class="w3-bar-item w3-button w3-padding-large"
-                    >LOCALIZACIÓN</a
-                >
-                <a
-                    href="inscripcion.html"
-                    class="w3-bar-item w3-button w3-padding-large"
-                    >INSCRIPCIÓN</a
-                >
-            </div>
-        </header>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a
+                        id="redHover"
+                        style="padding-left: 1.5rem;"
+                        class="navbar-item has-text-weight-bold"
+                        href="index.html"
+                    >
+                        INICIO
+                    </a>
 
-        <div class="row programa">
-            <div class="col-4">
-                <img
-                    src="images/people/ocelote.png"
-                    alt="Ocelote"
-                    class="imagenes"
-                />
-                <h5 class="centrarTexto">Carlos Rodríguez 'Ocelote'</h5>
-                <p style="text-align: center;">
+                    <a
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold has-text-danger"
+                        href="programa.html"
+                    >
+                        PROGRAMA
+                    </a>
+
+                    <a
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold"
+                        href="localizacion.html"
+                    >
+                        LOCALIZACIÓN
+                    </a>
+
+                    <a
+                        id="redHover"
+                        class="navbar-item has-text-weight-bold"
+                        href="inscripcion.html"
+                    >
+                        INSCRIPCIÓN
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <span class="icon is-medium">
+                                <span class="fa-stack">
+                                    <i class="fas fa-user fa-stack-1x"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--  -->
+        <br /><br />
+        <!--  -->
+
+        <div
+            class="columns has-text-centered is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+            style="margin: 0px 70px;"
+        >
+            <div class="column">
+                <img src="images/people/ocelote.png" alt="" width="70%" />
+                <br />
+                <br />
+                <p class="title">Carlos 'Ocelote' Rodríguez</p>
+                <p class="heading is-marginless is-size-6">
                     Carlos "Ocelote" Rodríguez Santiago es un jugador retirado
                     conocido por jugar en SK Gaming. Es el fundador de Gamers2,
                     ahora llamado G2 Esports.
                 </p>
             </div>
-            <div class="col-4">
-                <img
-                    src="images/people/ibai.png"
-                    alt="Ibai Llanos"
-                    class="imagenes"
-                />
-                <h5 class="centrarTexto">Ibai Llanos</h5>
-                <p>
+            <div class="column">
+                <img src="images/people/ibai.png" alt="" width="70%" />
+                <br />
+                <br />
+                <p class="title">Ibai Llanos</p>
+                <p class="heading is-marginless is-size-6">
                     Ibai "Ibai" Llanos es un Shoutcaster de League of Legends
                     español. Ahora trabaja en G2 Esports
                 </p>
             </div>
-            <div class="col-4">
-                <img
-                    src="images/people/faker.png"
-                    alt="Faker"
-                    class="imagenes"
-                />
-                <h5 class="centrarTexto">Lee Sang-Hyeok ‘Faker’</h5>
-                <p>
+            <div class="column">
+                <img src="images/people/faker.png" alt="" width="70%" />
+                <br />
+                <br />
+                <p class="title">Lee 'Faker' Sang-Hyeok</p>
+                <p class="heading is-marginless is-size-6">
                     Lee "Faker" Sang-hyeok (Hangul: 이상혁) es un jugador de
                     esports de League of Legends, actualmente jugador y
                     copropietario en T1.
@@ -136,60 +138,112 @@
             </div>
         </div>
 
-        <footer class="footer">
-            <ul>
-                <div class="col-sm-4">
-                    <li>
-                        <a href="index.html" class="logo">
+        <!--  -->
+        <br /><br />
+        <!--  -->
+
+        <footer
+            class="footer has-background-black"
+            style="padding: 40px 24px 20px 24px;"
+        >
+            <div class="columns has-text-centered has-text-white">
+                <div class="column">
+                    <div class="columns">
+                        <div class="column">
                             <img
-                                src="images/logos/logo.PNG"
+                                src="images/logos/logoWhite.PNG"
                                 alt="Logo Ocelot"
+                                width="150"
+                                height="30"
                             />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img src="images/logos/twitter.png" alt="" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img src="images/logos/facebook.png" alt="" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img src="images/logos/instagram.png" alt="" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <img src="images/logos/youtube.png" alt="" />
-                        </a>
-                    </li>
+                        </div>
+                        <div class="column"></div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="column">
+                        <div class="columns has-text-centered">
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-twitter"
+                                ></ion-icon>
+                            </div>
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-instagram"
+                                ></ion-icon>
+                            </div>
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-facebook"
+                                ></ion-icon>
+                            </div>
+                            <div class="column">
+                                <ion-icon
+                                    class="icon is-medium has-text-danger"
+                                    name="logo-youtube"
+                                ></ion-icon>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="column is-paddingless">
+                    <p class="is-size-2">Contacto</p>
+                    <br />
 
-                <div class="col-sm-4">
-                    <li>
-                        <h2>Contacto</h2>
-                    </li>
-                    <li>Compañía: PNET©</li>
-                    <li>
-                        Emails: luis.decelismunoz@alum.uca.es<br />
-                        antonio.sanchmunoz@alum.uca.com
-                    </li>
+                    <p
+                        class="is-size-5"
+                        style="padding-left: 20px; padding-top: 10px;"
+                    >
+                        <b class="has-text-danger">Compañía:</b> Prácticas de
+                        PNET
+                    </p>
+                    <br />
+                    <p class="is-size-5" style="padding-left: 3px;">
+                        <b class="has-text-danger">E-mail:</b> info@pnet.com
+                    </p>
                 </div>
-
-                <div class="col-sm-4">
-                    <li>
-                        <h2>Navegación</h2>
-                    </li>
-                    <li>Inicio</li>
-                    <li>Localización</li>
-                    <li>Programa</li>
-                    <li>Inscripción</li>
+                <div class="column is-paddingless">
+                    <p class="is-size-2">Navegación</p>
+                    <!-- <br /> -->
+                    <div class="columns" style="padding-top: 10px;">
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="index.html"
+                                >Inicio</a
+                            >
+                        </div>
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="localizacion.html"
+                                >Localización</a
+                            >
+                        </div>
+                    </div>
+                    <br />
+                    <div class="columns">
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href="programa.html"
+                                >Programa</a
+                            >
+                        </div>
+                        <div class="column">
+                            <a
+                                class="is-size-5 has-text-danger has-text-weight-bold"
+                                href=""
+                                >Inscripción</a
+                            >
+                        </div>
+                    </div>
                 </div>
-            </ul>
+            </div>
         </footer>
     </body>
 </html>
