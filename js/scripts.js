@@ -100,3 +100,9 @@ function mostrarDetalles() {
         `;
     }
 }
+
+function desbloquearBoton() {
+    var boton = document.getElementById("boton");
+    if (boton.disabled == true) boton.disabled = false;
+    else boton.disabled = true;
+}
