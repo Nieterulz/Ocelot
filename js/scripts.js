@@ -29,8 +29,8 @@ function mostrarDetalles() {
                     Entrada al evento
                 </li>
             </ul>
-            <h3 class="is-size-4 has-text-weight-bold">
-                Precio final: 30€
+            <h3 class="is-size-4 has-text-weight-bold centrar-texto">
+                Precio final: <b id="precio">30</b> €
             </h3>
         `;
     }
@@ -57,8 +57,8 @@ function mostrarDetalles() {
                     Premios
                 </li>
             </ul>
-            <h3 class="is-size-4 has-text-weight-bold">
-                Precio final: 45€
+            <h3 class="is-size-4 has-text-weight-bold centrar-texto">
+                Precio final: <b id="precio">45</b> €
             </h3>
         `;
     }
@@ -94,8 +94,8 @@ function mostrarDetalles() {
                     Desplazamiento desde hotel a evento
                 </li>
             </ul>
-            <h3 class="is-size-4 has-text-weight-bold">
-                Precio final: 100€
+            <h3 class="is-size-4 has-text-weight-bold centrar-texto">
+                Precio final: <b id="precio">100</b> €
             </h3>
         `;
     }

@@ -50,12 +50,13 @@ function validar_telefono(id, spanId) {
     }
 }
 
-function validar_fechas(id1, id2, idSpan1, idSpan2, idPrecio) {
+function validar_fechas(id1, id2, idSpan1, idSpan2, idPrecio, idSelect) {
     var input1 = document.getElementById(id1);
     var input2 = document.getElementById(id2);
     var span1 = document.getElementById(idSpan1);
     var span2 = document.getElementById(idSpan2);
     var precio = document.getElementById(idPrecio);
+    var select = document.getElementById(idSelect);
     var fechaIni = new Date(document.getElementById(id1).value);
     var fechaFin = new Date(document.getElementById(id2).value);
 
@@ -96,11 +97,22 @@ function validar_fechas(id1, id2, idSpan1, idSpan2, idPrecio) {
         correcto = false;
     }
 
-    console.log(
-        (fechaFin.getTime() - fechaIni.getTime()) / (1000 * 60 * 60 * 24)
-    );
-
     if (correcto) {
-        precioActual = parseFloat(precio.textContent);
+        var precioBase;
+        if (select.value == "estandar") precioBase = 30;
+        if (select.value == "medio") precioBase = 45;
+        if (select.value == "vip") precioBase = 100;
+
+        var nDias =
+            (fechaFin.getTime() - fechaIni.getTime()) / (1000 * 60 * 60 * 24) +
+            1;
+
+        var precioFinal = (precioBase / 3) * nDias;
+
+        console.log(precioBase);
+        console.log(nDias);
+        console.log(precioFinal);
+
+        precio.innerText = Math.ceil(precioFinal);
     }
 }

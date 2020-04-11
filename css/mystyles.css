@@ -1,5 +1,6 @@
-.body {
-    background-image: url(../images/fondo.png);
+.background {
+    background: url("../images/fondo2.jpg") no-repeat center;
+    background-size: cover;
 }
 
 .separarInicio {
@@ -9,6 +10,10 @@
 #marginNoticias {
     margin: 0px 0px 0.7rem 0px;
     text-decoration: none;
+}
+
+#footer-padding {
+    padding: 40px 24px 20px 24px;
 }
 
 .navbar-item img {

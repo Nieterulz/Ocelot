@@ -23,9 +23,12 @@
         <script src="js/scripts.js"></script>
         <script src="js/validacion-formulario.js"></script>
     </head>
-    <body>
+    <body class="has-navbar-fixed-top">
         <header>
-            <nav class="navbar is-black" aria-label="main navigation">
+            <nav
+                class="navbar is-black is-fixed-top"
+                aria-label="main navigation"
+            >
                 <div class="navbar-brand">
                     <a id="logo" class="navbar-item" href="index.html">
                         <img
@@ -195,7 +198,7 @@
                         <div class="select">
                             <select
                                 id="select-id"
-                                onchange="mostrarDetalles();"
+                                onchange="mostrarDetalles();validar_fechas('fechaIni', 'fechaFin', 'spanFechaIni', 'spanFechaFin', 'precio', 'select-id');"
                             >
                                 <option value="estandar">Abono estándar</option>
                                 <option value="medio">Abono medio</option>
@@ -216,7 +219,7 @@
                             type="date"
                             data-polyfill="all"
                             required
-                            onchange="validar_fechas('fechaIni', 'fechaFin', 'spanFechaIni', 'spanFechaFin', 'precio');"
+                            onchange="validar_fechas('fechaIni', 'fechaFin', 'spanFechaIni', 'spanFechaFin', 'precio', 'select-id');"
                         />
                         <span class="icon is-small is-left">
                             <i class="fas fa-calendar"></i>
@@ -240,7 +243,7 @@
                             type="date"
                             required
                             data-polyfill="all"
-                            onchange="validar_fechas('fechaIni', 'fechaFin', 'spanFechaIni', 'spanFechaFin', 'precio');"
+                            onchange="validar_fechas('fechaIni', 'fechaFin', 'spanFechaIni', 'spanFechaFin', 'precio', 'select-id');"
                         />
                         <span class="icon is-small is-left">
                             <i class="fas fa-calendar"></i>

@@ -20,9 +20,12 @@
         ></script>
         <script src="js/scripts.js"></script>
     </head>
-    <body class="body">
+    <body class="has-navbar-fixed-top">
         <header>
-            <nav class="navbar is-black" aria-label="main navigation">
+            <nav
+                class="navbar is-black is-fixed-top"
+                aria-label="main navigation"
+            >
                 <div class="navbar-brand">
                     <a id="logo" class="navbar-item" href="index.html">
                         <img
@@ -102,53 +105,57 @@
         </header>
 
         <!-- Noticias -->
-        <aside
-            class="column is-3 is-offset-9 hero-body has-text-centered has-background-transparent paddingless-top"
-        >
-            <h2 id="marginNoticias" class="has-text-danger is-size-4">
-                Noticias
-            </h2>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <img
-                            src="images/news/csGo.png"
-                            alt="Counter Strike Go"
-                        />
-                        <h4 class="has-text-white is-size-5">
-                            CSGO: Katowice 2019
-                        </h4>
-                    </a>
-                </li>
+        <div class="background">
+            <aside
+                class="column is-3 is-offset-9 has-text-centered has-background-transparent paddingless-top"
+            >
+                <h2 id="marginNoticias" class="has-text-danger is-size-4">
+                    Noticias
+                </h2>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img
+                                src="images/news/csGo.png"
+                                alt="Counter Strike Go"
+                            />
+                            <h4 class="has-text-white is-size-5">
+                                CSGO: Katowice 2019
+                            </h4>
+                        </a>
+                    </li>
 
-                <li class="noticia">
-                    <a href="index.html">
-                        <img src="images/news/lolWords.png" alt="LoL Worlds" />
-                        <h4 class="has-text-white is-size-5">
-                            LoL: Worlds 2019
-                        </h4>
-                    </a>
-                </li>
+                    <li class="noticia">
+                        <a href="index.html">
+                            <img
+                                src="images/news/lolWords.png"
+                                alt="LoL Worlds"
+                            />
+                            <h4 class="has-text-white is-size-5">
+                                LoL: Worlds 2019
+                            </h4>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="index.html">
-                        <img
-                            src="images/news/lolAllStars.png"
-                            alt="LoL All Stars"
-                        />
-                        <h4 class="has-text-white is-size-5">
-                            LoL: All Star 2019
-                        </h4>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-        <!-- </div> -->
+                    <li>
+                        <a href="index.html">
+                            <img
+                                src="images/news/lolAllStars.png"
+                                alt="LoL All Stars"
+                            />
+                            <h4 class="has-text-white is-size-5">
+                                LoL: All Star 2019
+                            </h4>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
 
         <!-- desktop footer -->
         <footer
+            id="footer-padding"
             class="footer has-background-black is-oculto"
-            style="padding: 40px 24px 20px 24px;"
         >
             <div class="columns has-text-centered has-text-white">
                 <div class="column">
