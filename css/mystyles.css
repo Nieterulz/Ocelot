@@ -1,29 +1,66 @@
+/* Clase para definir una imagen de fondo */
 .background {
     background: url("../images/fondo2.jpg") no-repeat center;
     background-size: cover;
 }
 
+/* Separa el texto INICIO del item del menú de navegación */
 .separarInicio {
     padding-left: 1.5rem;
 }
 
+/* Añade un padding a noticias para ajustar la posición */
 #marginNoticias {
     margin: 0px 0px 0.7rem 0px;
     text-decoration: none;
 }
 
-#footer-padding {
+/* Añade un padding al footer para ajustar la posición */
+.padding-footer {
     padding: 40px 24px 20px 24px;
 }
 
+/* Añade un padding a Contacto > Compañia para ajustar la posición */
+.padding-compania {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+/* Añade un padding a Contacto > E-mail para ajustar la posición */
+.padding-email {
+    padding-left: 3px;
+}
+
+/* Añade un padding a Contacto para ajustar la posición */
+#padding-navegacion {
+    padding-top: 10px;
+}
+
+/* Define el color de las lineas para el footer en e movil */
+.linea-footer-movil {
+    background-color: gray;
+    height: 0.1rem;
+}
+
+#padding-margin-columns {
+    margin: 0px 70px;
+}
+
+.padding-people {
+    padding: 20px;
+}
+
+/* Hace que el logo no aparezca achatado */
 .navbar-item img {
     max-height: 3rem;
 }
 
+/* Hace que no se cambie el color del fondo del logo cuando pasamos el cursor por encima  */
 #logo {
     background-color: white;
 }
 
+/* Hace que el texto items del menu de navegación sean rojos al poner el cursor sobre ellos  */
 #redHoverInicio:hover,
 #redHoverPrograma:hover,
 #redHoverLocalizacion:hover,
@@ -31,10 +68,12 @@
     color: red;
 }
 
+/* Añade un fondo transparente */
 .has-background-transparent {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Elimina el padding de top */
 .paddingless-top {
     padding-top: 0px;
 }
@@ -44,21 +83,27 @@
     border-radius: 20px;
 }
 
+/* Estas clases hacen efecto cuando el ancho de pantalla es menor a 768 píxeles */
 @media (max-width: 768px) {
+    /* Añade un padding al formulario */
     .has-padding-form {
         padding-left: 55px;
         padding-right: 55px;
     }
+    /* Centra texto */
     .centrar-texto {
         text-align: center;
     }
+    /* Hace que no se muestre */
     .is-oculto {
         display: none;
     }
 }
 
+/* Estas clases hacen efecto cuando el ancho de pantalla es mayor a 769 píxeles */
 @media (min-width: 769px) {
     .not-oculto {
+        /* Hace que no se muestre */
         display: none;
     }
 }
