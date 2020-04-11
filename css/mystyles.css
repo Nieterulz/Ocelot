@@ -42,6 +42,9 @@
     .centrar-texto {
         text-align: center;
     }
+    .is-oculto {
+        display: none;
+    }
 }
 
 @media (min-width: 769px) {
