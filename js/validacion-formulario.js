@@ -50,8 +50,57 @@ function validar_telefono(id, spanId) {
     }
 }
 
-function desbloquearBoton() {
-    var boton = document.getElementById("boton");
-    if (boton.disabled == true) boton.disabled = false;
-    else boton.disabled = true;
+function validar_fechas(id1, id2, idSpan1, idSpan2, idPrecio) {
+    var input1 = document.getElementById(id1);
+    var input2 = document.getElementById(id2);
+    var span1 = document.getElementById(idSpan1);
+    var span2 = document.getElementById(idSpan2);
+    var precio = document.getElementById(idPrecio);
+    var fechaIni = new Date(document.getElementById(id1).value);
+    var fechaFin = new Date(document.getElementById(id2).value);
+
+    var ini = new Date("2020-07-03");
+    var fin = new Date("2020-07-05");
+
+    var correcto = true;
+
+    if (fechaIni >= ini && fechaIni <= fin) {
+        input1.className = "input is-success";
+        span1.className = "help is-danger is-hidden";
+        span1.innerHTML = "";
+    } else {
+        input1.className = "input is-danger";
+        span1.className = "help is-danger";
+        span1.innerHTML = "Fecha de inicio errónea";
+        correcto = false;
+    }
+
+    if (fechaFin <= fin && fechaFin >= ini) {
+        input2.className = "input is-success";
+        span2.className = "help is-danger is-hidden";
+        span2.innerHTML = "";
+    } else {
+        input2.className = "input is-danger";
+        span2.className = "help is-danger";
+        span2.innerHTML = "Fecha de fin errónea";
+        correcto = false;
+    }
+
+    if (fechaIni > fechaFin) {
+        input1.className = "input is-danger";
+        span1.className = "help is-danger";
+        input2.className = "input is-danger";
+        span2.className = "help is-danger";
+        span1.innerHTML = "Fecha de inicio errónea";
+        span2.innerHTML = "Fecha de fin errónea";
+        correcto = false;
+    }
+
+    console.log(
+        (fechaFin.getTime() - fechaIni.getTime()) / (1000 * 60 * 60 * 24)
+    );
+
+    if (correcto) {
+        precioActual = parseFloat(precio.textContent);
+    }
 }

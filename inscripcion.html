@@ -210,15 +210,21 @@
                     <label class="label">Fecha de inicio</label>
                     <div class="control has-icons-left">
                         <input
+                            id="fechaIni"
                             value="2020-07-03"
                             class="input"
                             type="date"
                             data-polyfill="all"
                             required
+                            onchange="validar_fechas('fechaIni', 'fechaFin', 'spanFechaIni', 'spanFechaFin', 'precio');"
                         />
                         <span class="icon is-small is-left">
                             <i class="fas fa-calendar"></i>
                         </span>
+                        <span
+                            id="spanFechaIni"
+                            class="help is-danger is-hidden"
+                        ></span>
                     </div>
                     <span></span>
                 </div>
@@ -228,15 +234,21 @@
                     <label class="label">Fecha de fin</label>
                     <div class="control has-icons-left">
                         <input
+                            id="fechaFin"
                             value="2020-07-05"
                             class="input"
                             type="date"
                             required
                             data-polyfill="all"
+                            onchange="validar_fechas('fechaIni', 'fechaFin', 'spanFechaIni', 'spanFechaFin', 'precio');"
                         />
                         <span class="icon is-small is-left">
                             <i class="fas fa-calendar"></i>
                         </span>
+                        <span
+                            id="spanFechaFin"
+                            class="help is-danger is-hidden"
+                        ></span>
                     </div>
                 </div>
 
@@ -258,10 +270,10 @@
                 </div>
 
                 <div class="field">
-                    <div class="control">
+                    <div class="control centrar-texto">
                         <button
                             id="boton"
-                            class="button is-black has-text-weight-bold is-oculto"
+                            class="button is-black has-text-weight-bold"
                             disabled
                         >
                             Comprar
@@ -283,15 +295,17 @@
                     Abono estándar
                 </h1>
 
-                <h3 class="has-text-weight-bold is-size-4">Incluye:</h3>
+                <h3 class="has-text-weight-bold is-size-4 centrar-texto">
+                    Incluye:
+                </h3>
 
                 <ul class="list centrar-texto">
                     <li class="list-item">
                         Entrada al evento
                     </li>
                 </ul>
-                <h3 class="is-size-4 has-text-weight-bold">
-                    Precio final: 30€
+                <h3 class="is-size-4 has-text-weight-bold centrar-texto">
+                    Precio final: <b id="precio">30</b> €
                 </h3>
             </div>
             <br />
