@@ -6,7 +6,14 @@
         <title>Inscripción</title>
         <link rel="stylesheet" href="css/mybulma.css" />
         <link rel="stylesheet" href="css/mystyles.css" />
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule=""
+            src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+        ></script>
         <script
             defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
@@ -14,6 +21,10 @@
         <script src="node_modules/better-dom/dist/better-dom.js"></script>
         <script src="node_modules/better-dateinput-polyfill/dist/better-dateinput-polyfill.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
+        <script
+            type="text/javascript"
+            src="js/validacion-formulario.js"
+        ></script>
     </head>
     <body>
         <header>
@@ -98,12 +109,25 @@
         <br /><br />
         <div class="columns">
             <!-- Formulario -->
-            <form action="#" class="column is-3 is-offset-1 has-padding-form">
+            <form
+                id="formulario"
+                action="#"
+                class="column is-3 is-offset-1 has-padding-form"
+            >
                 <!-- Nombre -->
                 <div class="field">
                     <label class="label">Nombre</label>
                     <div class="control">
-                        <input class="input" type="text" />
+                        <input
+                            id="nombre"
+                            class="input"
+                            type="text"
+                            required
+                            onkeyup="validar_caracteres('nombre', 'spanNombre')"
+                        />
+                        <span id="spanNombre" class="help is-danger is-hidden"
+                            >Nobre inválido</span
+                        >
                     </div>
                 </div>
 
@@ -111,18 +135,38 @@
                 <div class="field">
                     <label class="label">Apellidos</label>
                     <div class="control">
-                        <input class="input" type="text" value="" />
+                        <input
+                            id="apellidos"
+                            class="input"
+                            type="text"
+                            required
+                            onkeyup="validar_caracteres('apellidos', 'spanApellidos')"
+                        />
+                        <span
+                            id="spanApellidos"
+                            class="help is-danger is-hidden"
+                            >Apellidos inválido</span
+                        >
                     </div>
                 </div>
 
                 <!-- Email -->
                 <div class="field">
                     <label class="label">Email</label>
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input" type="email" />
+                    <div class="control has-icons-left">
+                        <input
+                            id="email"
+                            class="input"
+                            type="email"
+                            required
+                            onkeyup="validar_email('email', 'spanEmail')"
+                        />
                         <span class="icon is-small is-left">
                             <i class="fas fa-envelope"></i>
                         </span>
+                        <span id="spanEmail" class="help is-danger is-hidden"
+                            >Email inválido</span
+                        >
                     </div>
                     <span></span>
                 </div>
@@ -131,10 +175,19 @@
                 <div class="field">
                     <label class="label">Teléfono</label>
                     <div class="control has-icons-left has-icons-right">
-                        <input class="input" type="tel" value="" />
+                        <input
+                            id="telefono"
+                            class="input"
+                            type="tel"
+                            required
+                            onkeyup="validar_telefono('telefono', 'spanTelefono')"
+                        />
                         <span class="icon is-small is-left">
                             <i class="fas fa-phone"></i>
                         </span>
+                        <span id="spanTelefono" class="help is-danger is-hidden"
+                            >Teléfono inválido</span
+                        >
                     </div>
                 </div>
 
@@ -143,10 +196,13 @@
                     <label class="label">Tipo de inscripción</label>
                     <div class="control">
                         <div class="select">
-                            <select>
-                                <option>Abono estándar</option>
-                                <option>Abono medio</option>
-                                <option>Abono VIP</option>
+                            <select
+                                id="select-id"
+                                onchange="mostrarDetalles();"
+                            >
+                                <option value="estandar">Abono estándar</option>
+                                <option value="medio">Abono medio</option>
+                                <option value="vip">Abono VIP</option>
                             </select>
                         </div>
                     </div>
@@ -156,7 +212,13 @@
                 <div class="field">
                     <label class="label">Fecha de inicio</label>
                     <div class="control has-icons-left">
-                        <input class="input" type="date" data-polyfill="all" />
+                        <input
+                            value="2020-07-03"
+                            class="input"
+                            type="date"
+                            data-polyfill="all"
+                            required
+                        />
                         <span class="icon is-small is-left">
                             <i class="fas fa-calendar"></i>
                         </span>
@@ -168,7 +230,13 @@
                 <div class="field">
                     <label class="label">Fecha de fin</label>
                     <div class="control has-icons-left">
-                        <input class="input" type="date" data-polyfill="all" />
+                        <input
+                            value="2020-07-05"
+                            class="input"
+                            type="date"
+                            required
+                            data-polyfill="all"
+                        />
                         <span class="icon is-small is-left">
                             <i class="fas fa-calendar"></i>
                         </span>
@@ -179,7 +247,11 @@
                 <div class="field">
                     <div class="control">
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input
+                                type="checkbox"
+                                required
+                                onclick="desbloquearBoton()"
+                            />
                             Acepto los
                             <a class="has-text-danger" href="#"
                                 >términos y condiciones</a
@@ -191,7 +263,9 @@
                 <div class="field">
                     <div class="control">
                         <button
+                            id="boton"
                             class="button is-black has-text-weight-bold is-oculto"
+                            disabled
                         >
                             Comprar
                         </button>
@@ -201,15 +275,27 @@
 
             <!-- Información sobre el tipo de inscripción -->
 
-            <div class="column is-4 is-offset-3 box">
-                <h1 class="has-text-centered has-text-weight-bold is-size-3">
+            <div
+                id="detalles-abono"
+                class="column is-4 is-offset-2 box has-text-black"
+            >
+                <h1
+                    id="tipo-abono"
+                    class="has-text-centered has-text-weight-bold is-size-2"
+                >
                     Abono estándar
                 </h1>
 
-                <p class="centrar-texto">
-                    El abono estándar incluye exclusivamente la entrada al
-                    evento.
-                </p>
+                <h3 class="has-text-weight-bold is-size-4">Incluye:</h3>
+
+                <ul class="list centrar-texto">
+                    <li class="list-item">
+                        Entrada al evento
+                    </li>
+                </ul>
+                <h3 class="is-size-4 has-text-weight-bold">
+                    Precio final: 30€
+                </h3>
             </div>
 
             <br />
