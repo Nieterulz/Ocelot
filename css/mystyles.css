@@ -61,11 +61,8 @@
 }
 
 /* Hace que el texto items del menu de navegación sean rojos al poner el cursor sobre ellos  */
-#redHoverInicio:hover,
-#redHoverPrograma:hover,
-#redHoverLocalizacion:hover,
-#redHoverInscripcion:hover {
-    color: red;
+.redHover:hover {
+    color: red !important;
 }
 
 /* Añade un fondo transparente */
