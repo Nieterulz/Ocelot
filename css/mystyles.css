@@ -50,7 +50,7 @@
     padding: 20px;
 }
 
-/* Hace que el logo no aparezca achatado */
+/* Hace que el logo no aparezca achatado en el menu de navegación*/
 .navbar-item img {
     max-height: 3rem;
 }

@@ -50,15 +50,21 @@ function validar_telefono(id, spanId) {
     }
 }
 
-function validar_fechas(id1, id2, idSpan1, idSpan2, idPrecio, idSelect) {
-    var input1 = document.getElementById(id1);
-    var input2 = document.getElementById(id2);
-    var span1 = document.getElementById(idSpan1);
-    var span2 = document.getElementById(idSpan2);
-    var precio = document.getElementById(idPrecio);
-    var select = document.getElementById(idSelect);
-    var fechaIni = new Date(document.getElementById(id1).value);
-    var fechaFin = new Date(document.getElementById(id2).value);
+window.onload = function change() {
+    document
+        .getElementById("select-id")
+        .addEventListener("change", validar_fechas);
+};
+
+function validar_fechas() {
+    var input1 = document.getElementById("fechaIni");
+    var input2 = document.getElementById("fechaFin");
+    var span1 = document.getElementById("spanFechaIni");
+    var span2 = document.getElementById("spanFechaFin");
+    var precio = document.getElementById("precio");
+    var select = document.getElementById("select-id");
+    var fechaIni = new Date(document.getElementById("fechaIni").value);
+    var fechaFin = new Date(document.getElementById("fechaFin").value);
 
     var ini = new Date("2020-07-03");
     var fin = new Date("2020-07-05");
@@ -108,10 +114,6 @@ function validar_fechas(id1, id2, idSpan1, idSpan2, idPrecio, idSelect) {
             1;
 
         var precioFinal = (precioBase / 3) * nDias;
-
-        console.log(precioBase);
-        console.log(nDias);
-        console.log(precioFinal);
 
         precio.innerText = Math.ceil(precioFinal);
     }

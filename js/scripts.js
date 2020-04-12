@@ -9,7 +9,7 @@ function desplegarMenu() {
     }
 }
 
-function mostrarDetalles() {
+window.onload = function mostrarDetalles() {
     var detallesAbono = document.getElementById("detalles-abono");
     var sel = document.getElementById("select-id");
 
@@ -41,7 +41,7 @@ function mostrarDetalles() {
             id="tipo-abono"
             class="has-text-centered has-text-weight-bold is-size-2"
             >
-                Abono estándar
+                Abono medio
             </h1>
 
             <h3 class="has-text-weight-bold is-size-4">Incluye:</h3>
@@ -69,7 +69,7 @@ function mostrarDetalles() {
             id="tipo-abono"
             class="has-text-centered has-text-weight-bold is-size-2"
             >
-                Abono estándar
+                Abono VIP
             </h1>
 
             <h3 class="has-text-weight-bold is-size-4">Incluye:</h3>
@@ -99,7 +99,7 @@ function mostrarDetalles() {
             </h3>
         `;
     }
-}
+};
 
 function desbloquearBoton() {
     var boton = document.getElementById("boton");
