@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cliente</title>
+        <link rel="stylesheet" href="../css/mybulma.css" />
+        <link rel="stylesheet" href="../css/mystyles.css" />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule=""
+            src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+        ></script>
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+        ></script>
+        <script src="../js/scripts.js"></script>
+    </head>
+    <body class="has-navbar-fixed-top">
+        <header>
+            <nav
+                class="navbar is-black is-fixed-top"
+                aria-label="main navigation"
+            >
+                <div class="navbar-brand">
+                    <a id="logo" class="navbar-item" href="index.html">
+                        <img
+                            src="../images/logos/logo.PNG"
+                            alt="Logo Ocelot"
+                            width="112"
+                            height="28"
+                        />
+                    </a>
+                    <a
+                        id="navBurger"
+                        role="button"
+                        class="navbar-burger"
+                        aria-label="menu"
+                        aria-expanded="false"
+                        data-target="navMenu"
+                        onclick="desplegarMenu();"
+                    >
+                        <span aria-hidden="true" class="is-black"></span>
+                        <span aria-hidden="true" class="is-black"></span>
+                        <span aria-hidden="true" class="is-black"></span>
+                    </a>
+                </div>
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a
+                            class="navbar-item has-text-weight-bold redHover separarInicio"
+                            href="getAll.html"
+                        >
+                            GET ALL
+                        </a>
+
+                        <a
+                            class="navbar-item has-text-weight-bold redHover"
+                            href="getUser.html"
+                        >
+                            GET USER
+                        </a>
+                        <a
+                            class="navbar-item has-text-weight-bold redHover has-text-danger"
+                            href="putUser.html"
+                        >
+                            PUT USER
+                        </a>
+
+                        <a
+                            class="navbar-item has-text-weight-bold redHover"
+                            href="deleteAll.html"
+                        >
+                            DELETE ALL
+                        </a>
+
+                        <a
+                            class="navbar-item has-text-weight-bold redHover"
+                            href="deleteUser.html"
+                        >
+                            DELETE USER
+                        </a>
+                        <a
+                            class="navbar-item has-text-weight-bold redHover"
+                            href="postUser.html"
+                        >
+                            POST USER
+                        </a>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a href="">
+                                    <span class="icon is-medium has-text-white">
+                                        <span class="fa-stack">
+                                            <em
+                                                class="fas fa-user fa-stack-1x"
+                                            ></em>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- desktop footer -->
+        <footer class="footer has-background-black is-oculto padding-footer">
+            <div class="columns has-text-centered has-text-white">
+                <div class="column">
+                    <div class="columns">
+                        <div class="column">
+                            <img
+                                src="../images/logos/logoWhite.PNG"
+                                alt="Logo Ocelot"
+                                width="150"
+                                height="30"
+                            />
+                        </div>
+                        <div class="column"></div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="column">
+                        <div class="columns has-text-centered">
+                            <div class="column">
+                                <a href="https://twitter.com/">
+                                    <ion-icon
+                                        class="icon is-medium has-text-danger"
+                                        name="logo-twitter"
+                                    ></ion-icon>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a href="https://instagram.com/">
+                                    <ion-icon
+                                        class="icon is-medium has-text-danger"
+                                        name="logo-instagram"
+                                    ></ion-icon>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a href="https://facebook.com/">
+                                    <ion-icon
+                                        class="icon is-medium has-text-danger"
+                                        name="logo-facebook"
+                                    ></ion-icon>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a href="https://youtube.com/">
+                                    <ion-icon
+                                        class="icon is-medium has-text-danger"
+                                        name="logo-youtube"
+                                    ></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        &copy; 2020 Ocelot, Inc. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="column is-paddingless">
+                    <p class="is-size-2">Contacto</p>
+                    <br />
+
+                    <p class="padding-compania is-size-5">
+                        <strong class="has-text-danger">Compañía:</strong>
+                        Prácticas de PNET
+                    </p>
+                    <br />
+                    <p class="is-size-5 padding-email">
+                        <strong class="has-text-danger">
+                            E-mail:
+                        </strong>
+                        <a class="has-text-white" href="mailto:info@pnet.com"
+                            >info@pnet.com</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- mobile footer -->
+        <footer class="footer has-background-black not-oculto padding-footer">
+            <div class="columns has-text-centered has-text-white">
+                <div class="column">
+                    <img
+                        src="../images/logos/logoWhite.PNG"
+                        alt="Logo Ocelot"
+                        width="200"
+                    />
+                    <br />
+                    <br />
+                    <div class="columns has-text-centered is-mobile">
+                        <div class="column">
+                            <a href="https://twitter.com/">
+                                <ion-icon
+                                    class="icon is-large has-text-danger"
+                                    name="logo-twitter"
+                                ></ion-icon>
+                            </a>
+                            <br />
+                            <br />
+                            <br />
+                            <a href="https://instagram.com/">
+                                <ion-icon
+                                    class="icon is-large has-text-danger"
+                                    name="logo-instagram"
+                                ></ion-icon>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a href="https://facebook.com/">
+                                <ion-icon
+                                    class="icon is-large has-text-danger"
+                                    name="logo-facebook"
+                                ></ion-icon>
+                            </a>
+                            <br />
+                            <br />
+                            <br />
+                            <a href="https://youtube.com/">
+                                <ion-icon
+                                    class="icon is-large has-text-danger"
+                                    name="logo-youtube"
+                                ></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="linea-footer-movil" />
+                    <p class="is-size-1">Contacto</p>
+
+                    <p class="padding-compania is-size-5">
+                        <strong class="has-text-danger">Compañía:</strong>
+                        Prácticas de PNET
+                    </p>
+                    <br />
+                    <p class="is-size-5 padding-email">
+                        <strong class="has-text-danger">
+                            E-mail:
+                        </strong>
+                        <a class="has-text-white" href="mailto:info@pnet.com"
+                            >info@pnet.com</a
+                        >
+                    </p>
+                    <br />
+                </div>
+                <br />
+                <p>
+                    &copy; 2020 Ocelot, Inc. Todos los derechos reservados.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
