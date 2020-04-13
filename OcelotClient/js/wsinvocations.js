@@ -114,11 +114,12 @@ function postAsistente() {
 
     $.ajax({
         type: "POST",
+        url: "http://localhost:8080/asistentes/",
+        contentType: "application/json",
         dataType: "json",
-        url: "http://localhost:8080/asistentes",
-        data: { JObject: JSON.stringify(asistente) },
+        data: JSON.stringify(asistente),
         success: function (data) {
-            mostrarAsistentes(data);
+            $("#contenido").html("Asistente inertado correctamente");
         },
         error: function (res) {
             alert("ERROR " + res.statusText);
@@ -134,16 +135,17 @@ function putAsistente() {
         email: $("#emailPUT").val(),
         telefono: parseInt($("#telefonoPUT").val()),
         abono: $("#abonoPUT").val(),
-        fechaIni: new Date($("#fechaIniPUT").val()),
-        fechaFin: new Date($("#fechaFinPUT").val()),
+        fechaIni: new Date($("#fechaIniPUT").val()).toDateString(),
+        fechaFin: new Date($("#fechaFinPUT").val()).toDateString(),
     };
     $.ajax({
         type: "PUT",
-        dataType: "json",
         url: "http://localhost:8080/asistentes/" + id,
-        data: asistente,
+        contentType: "application/json",
+        dataType: "json",
+        data: JSON.stringify(asistente),
         success: function (data) {
-            mostrarAsistentes(data);
+            $("#contenido").html("Asistente inertado correctamente");
         },
         error: function (res) {
             alert("ERROR " + res.statusText);
