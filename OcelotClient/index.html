@@ -72,26 +72,28 @@
                         <a
                             id="get"
                             class="navbar-item has-text-weight-bold redHover"
-                            onclick="formID('get');"
+                            onclick="formGetAsistente();"
                         >
-                            GET USER
+                            GET
                         </a>
                         <a
                             id="put"
                             class="navbar-item has-text-weight-bold redHover"
+                            onclick="formPUT();"
                         >
-                            PUT USER
+                            PUT
                         </a>
                         <a
                             id="post"
                             class="navbar-item has-text-weight-bold redHover"
-                            onclick="formPOST('post');"
+                            onclick="formPOST();"
                         >
-                            POST USER
+                            POST
                         </a>
                         <a
                             id="deleteall"
                             class="navbar-item has-text-weight-bold redHover"
+                            onclick="botonDeleteAll();"
                         >
                             DELETE ALL
                         </a>
@@ -99,9 +101,9 @@
                         <a
                             id="delete"
                             class="navbar-item has-text-weight-bold redHover"
-                            onclick="formID('delete');"
+                            onclick="formDeleteAsistente();"
                         >
-                            DELETE USER
+                            DELETE
                         </a>
                     </div>
                 </div>
@@ -111,21 +113,56 @@
         <br /><br /><br /><br />
 
         <div class="hero-body is-large columns">
-            <!-- Formulario que solo pide un ID -->
-            <div id="formID" class="column is-3 is-offset-1 is-hidden">
+            <!-- Formulario para obtener un asistente -->
+            <div
+                id="formGetAsistente"
+                class="column is-3 is-offset-1 is-hidden"
+            >
                 <div class="field">
                     <label class="label">ID</label>
                     <div class="control">
-                        <input id="ID" class="input" type="text" />
+                        <input id="idGetAsistente" class="input" type="text" />
                     </div>
                 </div>
 
                 <div class="field is-grouped">
                     <div class="control">
                         <button
-                            id="botonID"
+                            id="botonGetAsistente"
                             class="button is-black has-text-weight-bold"
-                        ></button>
+                            onclick="getAsistente()"
+                        >
+                            GET
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario para eliminar un asistente -->
+            <div
+                id="formDeleteAsistente"
+                class="column is-3 is-offset-1 is-hidden"
+            >
+                <div class="field">
+                    <label class="label">ID</label>
+                    <div class="control">
+                        <input
+                            id="idDeleteAsistente"
+                            class="input"
+                            type="text"
+                        />
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button
+                            id="botonDeleteAsistente"
+                            class="button is-black has-text-weight-bold"
+                            onclick="deleteAsistente()"
+                        >
+                            DELETE
+                        </button>
                     </div>
                 </div>
             </div>
@@ -225,13 +262,136 @@
                         <button
                             id="botonPOST"
                             class="button is-black has-text-weight-bold"
-                        ></button>
+                            onclick="postAsistente()"
+                        >
+                            POST
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="formPUT" class="column is-3 is-offset-1 is-hidden">
+                <div class="field">
+                    <label class="label">ID</label>
+                    <div class="control">
+                        <input id="idPutAsistente" class="input" type="text" />
+                    </div>
+                </div>
+                <!-- Nombre -->
+                <div class="field">
+                    <label for="nombrePUT" class="label">Nombre</label>
+                    <div class="control">
+                        <input id="nombrePUT" class="input" type="text" />
+                    </div>
+                </div>
+
+                <!-- Apellidos -->
+                <div class="field">
+                    <label for="apellidosPUT" class="label">Apellidos</label>
+                    <div class="control">
+                        <input id="apellidosPUT" class="input" type="text" />
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="field">
+                    <label for="emailPUT" class="label">Email</label>
+                    <div class="control has-icons-left">
+                        <input id="emailPUT" class="input" type="email" />
+                        <span class="icon is-small is-left">
+                            <em class="fas fa-envelope"></em>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="field">
+                    <label for="telefonoPUT" class="label">Teléfono</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="telefonoPUT" class="input" type="tel" />
+                        <span class="icon is-small is-left">
+                            <em class="fas fa-phone"></em>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Tipo de inscripción -->
+                <div class="field">
+                    <label for="abonoPUT" class="label"
+                        >Tipo de inscripción</label
+                    >
+                    <div class="control">
+                        <div class="select">
+                            <select id="abonoPUT">
+                                <option value="estandar">Abono estándar</option>
+                                <option value="medio">Abono medio</option>
+                                <option value="vip">Abono VIP</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fecha de inicio -->
+                <div class="field">
+                    <label for="fechaIniPUT" class="label"
+                        >Fecha de inicio</label
+                    >
+                    <div class="control has-icons-left">
+                        <input
+                            id="fechaIniPUT"
+                            value="2020-07-03"
+                            class="input"
+                            type="date"
+                        />
+                        <span class="icon is-small is-left">
+                            <em class="fas fa-calendar"></em>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Fecha de fin -->
+                <div class="field">
+                    <label for="fechaFinPUT" class="label">Fecha de fin</label>
+                    <div class="control has-icons-left">
+                        <input
+                            id="fechaFinPUT"
+                            value="2020-07-05"
+                            class="input"
+                            type="date"
+                        />
+                        <span class="icon is-small is-left">
+                            <em class="fas fa-calendar"></em>
+                        </span>
+                        <span
+                            id="spanFechaFin"
+                            class="help is-danger is-hidden"
+                        ></span>
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button
+                            id="botonPUT"
+                            class="button is-black has-text-weight-bold"
+                            onclick="putAsistente();"
+                        >
+                            PUT
+                        </button>
                     </div>
                 </div>
             </div>
 
             <span id="contenido"> </span>
         </div>
+
+        <button
+            id="botonDeleteAll"
+            class="button is-danger has-text-weight-bold is-hidden"
+            onclick="deleteAllAsistentes();"
+        >
+            DELETE ALL
+        </button>
 
         <br /><br /><br /><br /><br /><br /><br /><br />
 
