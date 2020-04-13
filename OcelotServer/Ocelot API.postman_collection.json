@@ -1,133 +1,164 @@
 {
-    "info": {
-        "_postman_id": "a20b0c6e-18bd-4012-9449-0b865159700d",
-        "name": "Ocelot API",
-        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-    },
-    "item": [
-        {
-            "name": "Recuperar todos los asistentes",
-            "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                    "raw": "http://localhost:8080/asistentes",
-                    "protocol": "http",
-                    "host": ["localhost"],
-                    "port": "8080",
-                    "path": ["asistentes"]
-                },
-                "description": "Recuperar todos los asistentes"
-            },
-            "response": []
-        },
-        {
-            "name": "Recuperar un asistente por ID",
-            "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                    "raw": "http://localhost:8080/asistentes/5e9342c3bcdedb2f6c5e7306",
-                    "protocol": "http",
-                    "host": ["localhost"],
-                    "port": "8080",
-                    "path": ["asistentes", "5e9342c3bcdedb2f6c5e7306"]
-                },
-                "description": "Recuperar un asistente por ID"
-            },
-            "response": []
-        },
-        {
-            "name": "Añadir un nuevo asistente",
-            "request": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                    "mode": "raw",
-                    "raw": "{\r\n    \"nombre\": \"Camil\",\r\n    \"apellidos\": \"Zaragoza Tafoya\",\r\n    \"email\": \"CamilZaragozaTafoya@gustr.com\",\r\n    \"telefono\": \"777 280 970\",\r\n    \"abono\": \"vip\",\r\n    \"fechaIni\": \"2020-07-03T00:00:00.000Z\",\r\n    \"fechaFin\": \"2020-07-05T00:00:00.000Z\"\r\n}",
-                    "options": {
-                        "raw": {
-                            "language": "json"
-                        }
-                    }
-                },
-                "url": {
-                    "raw": "http://localhost:8080/asistentes",
-                    "protocol": "http",
-                    "host": ["localhost"],
-                    "port": "8080",
-                    "path": ["asistentes"]
-                },
-                "description": "Crea un nuevo asistente"
-            },
-            "response": []
-        },
-        {
-            "name": "Actualizar un asistente por ID",
-            "request": {
-                "method": "PUT",
-                "header": [],
-                "body": {
-                    "mode": "raw",
-                    "raw": "{\r\n        \"nombre\": \"Camil\",\r\n        \"apellidos\": \"Zaragoza Tafoya\",\r\n        \"email\": \"CamilZaragozaTafoya@gustr.com\",\r\n        \"telefono\": \"111 111 111\",\r\n        \"abono\": \"vip\",\r\n        \"fechaIni\": \"2020-07-03T00:00:00.000Z\",\r\n        \"fechaFin\": \"2020-07-05T00:00:00.000Z\"\r\n    }",
-                    "options": {
-                        "raw": {
-                            "language": "json"
-                        }
-                    }
-                },
-                "url": {
-                    "raw": "http://localhost:8080/asistentes/Camil",
-                    "protocol": "http",
-                    "host": ["localhost"],
-                    "port": "8080",
-                    "path": ["asistentes", "Camil"]
-                },
-                "description": "Actualiza un asistente"
-            },
-            "response": []
-        },
-        {
-            "name": "Eliminar todos los asistentes",
-            "request": {
-                "method": "DELETE",
-                "header": [],
-                "body": {
-                    "mode": "raw",
-                    "raw": "",
-                    "options": {
-                        "raw": {
-                            "language": "json"
-                        }
-                    }
-                },
-                "url": {
-                    "raw": "http://localhost:8080/asistentes",
-                    "protocol": "http",
-                    "host": ["localhost"],
-                    "port": "8080",
-                    "path": ["asistentes"]
-                },
-                "description": "Elimina todos los asistentes"
-            },
-            "response": []
-        },
-        {
-            "name": "Eliminar un asistente por ID",
-            "request": {
-                "method": "DELETE",
-                "header": [],
-                "url": {
-                    "raw": "http://localhost:8080/asistentes/5e934153d19e0540d071db5c",
-                    "protocol": "http",
-                    "host": ["localhost"],
-                    "port": "8080",
-                    "path": ["asistentes", "5e934153d19e0540d071db5c"]
-                },
-                "description": "Elimina un asistente"
-            },
-            "response": []
-        }
-    ],
-    "protocolProfileBehavior": {}
+	"info": {
+		"_postman_id": "7769c972-6223-4262-90f5-3b6a99bf049f",
+		"name": "Ocelot API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Recuperar todos los asistentes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/asistentes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asistentes"
+					]
+				},
+				"description": "Recuperar todos los asistentes"
+			},
+			"response": []
+		},
+		{
+			"name": "Recuperar un asistente por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/asistentes/5e9342c3bcdedb2f6c5e7306",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asistentes",
+						"5e9342c3bcdedb2f6c5e7306"
+					]
+				},
+				"description": "Recuperar un asistente por ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Añadir un nuevo asistente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Camil\",\r\n    \"apellidos\": \"Zaragoza Tafoya\",\r\n    \"email\": \"CamilZaragozaTafoya@gustr.com\",\r\n    \"telefono\": 777280270,\r\n    \"abono\": \"vip\",\r\n    \"fechaIni\": \"2020-07-03T00:00:00.000Z\",\r\n    \"fechaFin\": \"2020-07-05T00:00:00.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/asistentes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asistentes"
+					]
+				},
+				"description": "Crea un nuevo asistente"
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un asistente por ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Camil\",\n    \"apellidos\": \"Zaragoza Tafoya\",\n    \"email\": \"CamilZaragozaTafoya@gustr.com\",\n    \"telefono\": 111111111,\n    \"abono\": \"vip\",\n    \"fechaIni\": \"2020-07-03T00:00:00.000Z\",\n    \"fechaFin\": \"2020-07-05T00:00:00.000Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/asistentes/Camil",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asistentes",
+						"Camil"
+					]
+				},
+				"description": "Actualiza un asistente"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar todos los asistentes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/asistentes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asistentes"
+					]
+				},
+				"description": "Elimina todos los asistentes"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un asistente por ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/asistentes/5e934153d19e0540d071db5c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asistentes",
+						"5e934153d19e0540d071db5c"
+					]
+				},
+				"description": "Elimina un asistente"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
 }
