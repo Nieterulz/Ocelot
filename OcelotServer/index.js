@@ -6,6 +6,7 @@ const path = require("path");
 const PORT = process.env.PORT || 8080;
 const bodyParser = require("body-parser");
 const baseAPI = "/api/v1";
+
 const asistentesService = require("./routes/asistentes-service");
 const asistentes = require("./routes/asistentes");
 const cors = require("cors");
@@ -18,10 +19,6 @@ app.use(
         extended: true,
     })
 );
-
-app.get("/", function (req, res) {
-    res.send("Hello World!");
-});
 
 app.use("/asistentes", asistentes);
 const server = http.createServer(app);
