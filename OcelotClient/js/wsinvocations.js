@@ -119,7 +119,7 @@ function postAsistente() {
         dataType: "json",
         data: JSON.stringify(asistente),
         success: function (data) {
-            $("#contenido").html("Asistente inertado correctamente");
+            $("#contenido").html("Asistente insertado correctamente");
         },
         error: function (res) {
             alert("ERROR " + res.statusText);
@@ -145,7 +145,7 @@ function putAsistente() {
         dataType: "json",
         data: JSON.stringify(asistente),
         success: function (data) {
-            $("#contenido").html("Asistente inertado correctamente");
+            $("#contenido").html("Asistente actualizado correctamente");
         },
         error: function (res) {
             alert("ERROR " + res.statusText);
