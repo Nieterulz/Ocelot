@@ -20,7 +20,7 @@
     "homepage": "https://github.com/Nieterulz/Ocelot#readme",
     "devDependencies": {
         "bulma": "^0.8.1",
-        "node-sass": "^4.13.1"
+        "node-sass": "^7.0.0"
     },
     "dependencies": {
         "better-dateinput-polyfill": "^3.3.0",
